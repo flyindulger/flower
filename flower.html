@@ -20,9 +20,17 @@
           justify-content: flex-end; /* 花的容器在右侧对齐 */
       }
       .photos-container {
-          flex: 1; /* 相片容器占据屏幕左侧 */
-          padding-right: 20px; /* 根据需要调整间距 */
-      }
+        display: flex;
+        flex-wrap: wrap; /* 允许相片在一行放不下时换行 */
+        justify-content: space-around; /* 水平分布相片，保持间距 */
+    }
+    
+    /* 确保相片不会超出容器宽度 */
+    .photos-container img {
+        max-width: 100%; /* 或者设置为你想要的宽度，例如 '300px' */
+        height: auto; /* 保持图片的原始宽高比 */
+        margin: 10px; /* 设置相片之间的间距 */
+    }
       /* ... 其他样式 ... */
   </style>
 </head>
