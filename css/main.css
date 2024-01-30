@@ -37,7 +37,7 @@ body {
 }
 
 .flower {
-  position: relative;
+  position: absolute;
   bottom: 10vmin;
   transform-origin: bottom center;
   z-index: 10;
