@@ -75,7 +75,7 @@ body {
   right: auto; /* 设置为auto，让浏览器自动计算左侧位置 */
   left: 50%; /* 设置左侧位置为屏幕宽度的50% */
   transform: translateX(-50%); /* 水平居中，向左移动自身宽度的50% */
-  transform-origin: bottom center;
+  transform-origin: bottom right;
   z-index: 10;
 
   --fl-speed: 0.8s;
