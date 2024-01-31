@@ -4,7 +4,7 @@
 }
 
 .greetings{
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 900;
     position: absolute; /* 使用绝对定位 */
     top: 50%; /* 垂直居中 */
