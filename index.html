@@ -40,13 +40,33 @@
       <img src="img/photo.jpg" alt="Photo 1">
     </div> -->
     <!-- <div class="greetings">
-      
           <span>H</span>
           <span>A</span>
           <span>L</span>
           <span>L</span>
           <span>O</span>
     </div> -->
+    <div class="greetings">
+      <span id="dayCount">计算中...</span>
+    </div>
+
+    <script>
+        // 计算从2024年1月1日到当前日期的天数
+        function calculateDaysSinceJanuaryFirst() {
+            var today = new Date();
+            var newYear = new Date(today.getFullYear(), 0, 1); // 创建一个日期对象，表示当年的1月1日
+            var oneDay = 24 * 60 * 60 * 1000; // 一天的毫秒数
+            var diffDays = Math.round((today - newYear) / oneDay); // 计算天数差
+
+            // 获取dayCount元素
+            var dayCountElement = document.getElementById('dayCount');
+            // 更新文本内容
+            dayCountElement.textContent = '今天距离2024年1月1日已经' + diffDays + '天';
+        }
+
+        // 当页面加载完成后执行函数
+        window.onload = calculateDaysSinceJanuaryFirst;
+    </script>
     <!-- <div class="flowers-container"> -->
     <div class="flowers">
       <div class="flower flower--1">
