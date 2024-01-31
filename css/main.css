@@ -43,6 +43,7 @@ body {
   position: absolute;
   transform: scale(0.4);
   max-width: 50%;
+  left: 50%;
 }
 
 .flowers_3 {
