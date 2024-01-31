@@ -7,7 +7,7 @@
     font-size: 4rem;
     font-weight: 900;
     position: absolute; /* 使用绝对定位 */
-    top: 50%; /* 垂直居中 */
+    top: 40%; /* 垂直居中 */
     left: 50%; /* 水平居中 */
     transform: translate(-50%, -50%); /* 使用transform属性进行偏移，以适应屏幕大小 */
     text-align: center; /* 如果你想要文本居中显示 */
