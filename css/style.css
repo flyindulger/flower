@@ -64,3 +64,33 @@
         font-size: .5rem;
     }
 }
+
+.heart {
+    width: 100px;
+    height: 90px;
+    position: relative;
+    background-color: red;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+
+.heart:before,
+.heart:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-color: red;
+}
+
+.heart:before {
+    border-radius: 50px 50px 0 0;
+    top: -45px;
+    left: 0;
+}
+
+.heart:after {
+    border-radius: 0 0 50px 50px;
+    top: 0;
+    left: 45px;
+}
