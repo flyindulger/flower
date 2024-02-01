@@ -19,12 +19,17 @@
         display: flex;
         z-index: 2;
         justify-content: space-around; /* 水平分布相片，保持间距 */
-    }
+      }
       .photos-container img {
           max-width: 100%; /* 或者设置为你想要的宽度，例如 '300px' */
           max-height: 100vh; /* 或者设置为你想要的高度，例如 '300px' */
           object-fit: cover; /* 保持图片的原始宽高比 */
           margin: 10px; /* 设置相片之间的间距 */
+      }
+      canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
       }
       /* ... 其他样式 ... */
   </style>
@@ -39,7 +44,7 @@
     <!-- <div class="photos-container">
       <img src="img/photo.jpg" alt="Photo 1">
     </div> -->
-    
+  <canvas id="pinkboard"></canvas>
   <script>
     /*
     * Settings
