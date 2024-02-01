@@ -4,16 +4,16 @@
 }
 
 .greetings{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
     position: absolute; /* 使用绝对定位 */
-    top: 20%; /* 垂直居中 */
+    top: 40%; /* 垂直居中 */
     left: 50%; /* 水平居中 */
     transform: translate(-50%, -50%); /* 使用transform属性进行偏移，以适应屏幕大小 */
     text-align: center; /* 如果你想要文本居中显示 */
 }
 .greetings > span{
-    animation: glow 2.5s ease-in-out infinite;
+    animation: glow 4s linear infinite;
 }
 @keyframes glow{
     0%, 100%{
