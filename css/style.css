@@ -4,10 +4,10 @@
 }
 
 .greetings{
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 900;
     position: absolute; /* 使用绝对定位 */
-    top: 40%; /* 垂直居中 */
+    top: 20%; /* 垂直居中 */
     left: 50%; /* 水平居中 */
     transform: translate(-50%, -50%); /* 使用transform属性进行偏移，以适应屏幕大小 */
     text-align: center; /* 如果你想要文本居中显示 */
@@ -26,9 +26,9 @@
     }
 }
 .greetings > span:nth-child(2){
-    animation-delay: .2s ;
+    animation-delay: 0s ;
 }
-.greetings > span:nth-child(3){
+/* .greetings > span:nth-child(3){
     animation-delay: .4s ;
 }
 .greetings > span:nth-child(4){
@@ -36,7 +36,7 @@
 }
 .greetings > span:nth-child(5){
     animation-delay: .8s;
-}
+} */
 
 .description{
     font-size: 1.5rem;
