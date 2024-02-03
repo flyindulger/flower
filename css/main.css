@@ -15,14 +15,25 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  background-image: url('../img/background.jpg'); /* 替换 'path-to-your-image.jpg' 为你的图片路径 */
-  background-size: cover; /* 确保图片覆盖整个背景 */
-  background-position: center; /* 图片居中显示 */
-  background-repeat: no-repeat; /* 防止图片重复 */
-  background-attachment: fixed; /* 如果你想要背景图片固定不动 */
-  filter: brightness(50%);
+  background-image: url('../img/background.jpg'); /* 确保路径正确 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   perspective: 1000px;
+}
+
+/* 添加一个覆盖背景图片的元素，并应用滤镜 */
+body::before {
+  content: "";
+  position: absolute; /* 或者 fixed，取决于你的需求 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* 确保伪元素在背景图片之下 */
+  background-color: rgba(0, 0, 0, 0.5); /* 使用半透明的黑色背景来降低亮度 */
 }
 
 .night {
