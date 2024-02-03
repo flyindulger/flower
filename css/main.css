@@ -20,6 +20,7 @@ body {
   background-position: center; /* 图片居中显示 */
   background-repeat: no-repeat; /* 防止图片重复 */
   background-attachment: fixed; /* 如果你想要背景图片固定不动 */
+  filter: brightness(50%);
   overflow: hidden;
   perspective: 1000px;
 }
