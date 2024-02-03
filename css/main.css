@@ -33,7 +33,7 @@ body::before {
   right: 0;
   bottom: 0;
   z-index: -1; /* 确保伪元素在背景图片之下 */
-  background-color: rgba(0, 0, 0, 0.5); /* 使用半透明的黑色背景来降低亮度 */
+  background-color: rgba(0, 0, 0, 0.7); /* 使用半透明的黑色背景来降低亮度 */
 }
 
 .night {
