@@ -15,7 +15,11 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--dark-color);
+  background-image: url('background.jpg'); /* 替换 'path-to-your-image.jpg' 为你的图片路径 */
+  background-size: cover; /* 确保图片覆盖整个背景 */
+  background-position: center; /* 图片居中显示 */
+  background-repeat: no-repeat; /* 防止图片重复 */
+  background-attachment: fixed; /* 如果你想要背景图片固定不动 */
   overflow: hidden;
   perspective: 1000px;
 }
